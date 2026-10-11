@@ -196,6 +196,8 @@ body { background: var(--paper); color: var(--ink); }
 .achievement-cert .date { color: var(--signal); font: 10px var(--app-font-mono); }
 .achievement-cert strong { font-size: 14px; font-weight: 500; }
 .achievement-cert > span:last-child { color: var(--ink-soft); font-size: 11px; }
+.certification-preview { overflow: hidden; min-height: 520px; border: 1px solid var(--line); background: var(--paper-deep); }
+.certification-preview iframe { display: block; width: 100%; height: min(72vh, 820px); min-height: 520px; border: 0; }
 .coding-profiles { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
 .profile-card { position: relative; display: flex; flex-direction: column; align-items: flex-start; min-height: 180px; border: 1px solid var(--line); background: var(--surface); padding: 24px; color: var(--ink); text-decoration: none; transition: border-color .2s, transform .2s; }
 .profile-card:hover { border-color: var(--signal); transform: translateY(-3px); }

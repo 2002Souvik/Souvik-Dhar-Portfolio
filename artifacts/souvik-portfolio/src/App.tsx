@@ -141,6 +141,7 @@ function App() {
             <a href="#skills" onClick={closeMobileNav}>Skills</a>
             <a href="#experience" onClick={closeMobileNav}>Experience</a>
             <a href="#education" onClick={closeMobileNav}>Education</a>
+            <a href="#certifications" onClick={closeMobileNav}>Certifications</a>
             <a href="#profiles" onClick={closeMobileNav}>Profiles &amp; proof</a>
             <a href="#contact" onClick={closeMobileNav}>Contact</a>
           </nav>
@@ -294,6 +295,22 @@ function App() {
               </article>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section className="section shell certification-section" id="certifications">
+        <div className="section-heading reveal">
+          <div><div className="section-index">05 / Certification</div><h2>Learning,<br /><em>recognized.</em></h2></div>
+          <p className="section-intro">View my certification below.</p>
+        </div>
+        <div className="certification-preview reveal">
+          <iframe
+            src="https://drive.google.com/file/d/1ChQhKXhXlaEGHcuYK9i5ReqNnUvJ8dkf/preview"
+            title="Certification preview"
+            loading="lazy"
+            allow="autoplay"
+            allowFullScreen
+          />
         </div>
       </section>
 
