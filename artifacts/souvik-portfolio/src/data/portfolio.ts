@@ -92,7 +92,7 @@ export const portfolio = {
     ],
   },
   skills: [
-    { category: 'Languages', items: 'C · C++ · Java · JavaScript' },
+    { category: 'Languages', items: 'C · C++ · Java · JavaScript . Python' },
     { category: 'Frontend', items: 'HTML · CSS · React.js · Tailwind CSS · Bootstrap' },
     { category: 'Backend', items: 'Node.js · Express.js · Firebase' },
     { category: 'Databases', items: 'MySQL · MongoDB' },
