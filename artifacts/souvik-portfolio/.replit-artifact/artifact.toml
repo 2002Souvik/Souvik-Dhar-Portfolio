@@ -1,0 +1,28 @@
+kind = "web"
+previewPath = "/"
+title = "Souvik Dhar — Developer Portfolio"
+description = "A responsive, recruiter-focused software engineering portfolio for Souvik Dhar, featuring verified profile details, projects, skills, resume and contact links."
+version = "1.0.0"
+id = "artifacts/souvik-portfolio"
+router = "path"
+
+[[services]]
+name = "web"
+paths = [ "/" ]
+localPort = 19910
+
+[services.development]
+run = "pnpm --filter @workspace/souvik-portfolio run dev"
+
+[services.production]
+build = [ "pnpm", "--filter", "@workspace/souvik-portfolio", "run", "build" ]
+serve = "static"
+publicDir = "artifacts/souvik-portfolio/dist/public"
+
+[[services.production.rewrites]]
+from = "/*"
+to = "/index.html"
+
+[services.env]
+PORT = "19910"
+BASE_PATH = "/"

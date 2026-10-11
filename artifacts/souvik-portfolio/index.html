@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      try {
+        const savedTheme = localStorage.getItem('souvik-theme');
+        const systemPrefersLight = window.matchMedia('(prefers-color-scheme: light)').matches;
+        if (savedTheme === 'dark' || (!savedTheme && !systemPrefersLight)) {
+          document.documentElement.classList.add('dark');
+        }
+      } catch {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
+    <title>Souvik Dhar — Developer Portfolio</title>
+    <meta name="description" content="Souvik Dhar is an aspiring software engineer focused on Java, backend engineering, REST APIs, and full-stack development." />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:title" content="Souvik Dhar — Developer Portfolio" />
+    <meta property="og:description" content="Software engineering, backend systems, and thoughtful full-stack projects by Souvik Dhar." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Souvik Dhar — Developer Portfolio" />
+    <meta name="twitter:description" content="Software engineering, backend systems, and thoughtful full-stack projects by Souvik Dhar." />
+    <meta name="theme-color" content="#172729" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
